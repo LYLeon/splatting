@@ -12,7 +12,7 @@ ext_modules = [
 ]
 
 
-cublas_include_paths = glob.glob(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include\cublas_v2.h", recursive=True)
+cublas_include_paths = glob.glob(r"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include\cublas_v2.h", recursive=True)
 if len(cublas_include_paths) > 0:
     ext_modules.append(
         cpp_extension.CUDAExtension(
